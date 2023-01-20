@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Modern Password Generator</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Trispace:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Script -->
+    <script src="/Modern-Password-Generator/app.js" defer></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/Modern-Password-Generator/style.css">
+
+</head>
+
+<body>
+    <!-- App Title -->
+    <div id="app-title-container" class="app-container">
+        <h1 class="app-title">Password Generator</h1>
+    </div>
+
+    <!-- Password Container -->
+    <div id="password-container" class="password-container">
+        <input class="password-input" id="password-input" type="text">
+        <button class="password-copy" id="password-copy">Copy</button>
+    </div>
+
+    <!-- Password Options -->
+    <div id="password-options" class="password-options">
+        <div id="character-lenght-container" class="character-lenght-container">
+            <div id="character-lenght-content">
+                <p id="character-lenght-name" class="character-lenght-name">Character Length</p>
+                <span id="character-lenght-value" class="character-lenght-value">0</span>
+            </div>
+            <input id="character-lenght-range" class="character-lenght-range" type="range">
+        </div>
+        <div class="option-include-container">
+            <div class="include-uppercase-container">
+                <input id="include-uppercase-checkbox" class="include-uppercase-checkbox" type="checkbox">
+                <p class="include-uppercase-text">Include Uppercase Letters</p>
+            </div>
+            <div class="include-lowercase-container">
+                <input id="include-lowercase-checkbox" class="include-lowercase-checkbox" type="checkbox">
+                <p class="include-lowercase-text">Include Lowercase Letters</p>
+            </div>
+            <div class="include-numbers-container">
+                <input id="include-numbers-checkbox" class="include-numbers-checkbox" type="checkbox">
+                <p class="include-numbers-text">Include Numbers</p>
+            </div>
+            <div class="include-symbols-container">
+                <input id="include-symbols-checkbox" class="include-symbols-checkbox" type="checkbox">
+                <p class="include-symbols-text">Include Symbols</p>
+            </div>
+        </div>
+        <div class="password-strength-container">
+            <div class="password-strength-content">
+                <p class="password-strength-name">Strength</p>
+                <div class="strength-value">
+                    <p id="strength-value-name" class="strength-value-name">Weak</p>
+                    <div id="strenght-containers">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Generate Button -->
+        <div id="generate-btn-container" class="generate-btn-container">
+            <button id="generate-btn" class="generate-btn">Generate</button>
+        </div>
+
+    </div>
+</body>
+
+</html>
