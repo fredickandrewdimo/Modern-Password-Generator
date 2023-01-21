@@ -39,7 +39,7 @@ body {
 /* App Title */
 
 .app-title-container h1 {
-    color: var(--secondary-text);
+    color: var(--primary-text);
     font-size: 1.8rem;
     margin: 0 0 20px 0;
 }
