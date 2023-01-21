@@ -23,11 +23,16 @@ html {
 
 body {
     font-family: 'Trispace', sans-serif;
+
+}
+
+.main-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 80vh;
+    height: 100vh;
+    overflow-x: hidden;
     background-color: var(--primary-body);
 }
 
@@ -58,10 +63,25 @@ body {
     background-color: var(--secondary-body);
     color: var(--primary-text);
     font-size: 1.6rem;
+    border: none;
 }
 
 .password-copy {
-    padding: 12px 20px;
+    /* padding: 12px 20px; */
+    background-color: var(--secondary-body);
+}
+
+.password-copy i {
+    font-size: 2rem;
+    color: var(--primary-text);
+}
+
+.password-copy:hover {
+    cursor: pointer;
+}
+
+.password-copy i:hover {
+    color: var(--primary-accent);
 }
 
 /* Password Options */
@@ -92,14 +112,37 @@ body {
 }
 
 .character-lenght-range {
-    margin: 0 0 15px 0;
+    margin: 0 0 20px 0;
     width: 100%;
 }
+
+.character-lenght-range::-webkit-slider-thumb {
+    /* height: 100px;
+    width: 100px; */
+    top: -5.5px;
+    position: relative;
+    /* background-color: red !important; */
+}
+
+.character-lenght-range::-webkit-slider-thumb:hover {
+    cursor: pointer;
+}
+
+.character-lenght-range::-webkit-slider-runnable-track {
+    background-color: var(--primary-body);
+    height: 5px;
+}
+
+.character-lenght-content input[type="range"]::-webkit-slider-thumb {
+    background-color: #ff0000;
+    /* Adjust as needed */
+}
+
 
 /* Options for Include */
 
 .option-include-container {
-    margin: 0 0 15px 0;
+    margin: 0 0 20px 0;
 }
 
 .include-uppercase-container {
@@ -165,9 +208,10 @@ body {
 /* Password Strenght Container */
 
 .password-strength-container {
-    margin: 0 0 15px 0;
+    margin: 0 0 20px 0;
     background-color: var(--tertiary-body);
     padding: 10px;
+
 }
 
 .password-strength-content {
@@ -186,6 +230,54 @@ body {
     color: var(--primary-text);
     text-transform: uppercase;
     font-size: 1.4rem;
+    margin: 0 10px 0 0;
+    font-weight: bold;
+}
+
+.strength-value {
+    display: flex;
+    align-items: center;
+}
+
+.strenght-containers {
+    display: flex;
+    align-items: center;
+
+}
+
+.vertical-bar-container-1 {
+    width: 8px;
+    height: 18px;
+    /* background-color: none; */
+    /* border: 2px solid var(--primary-text); */
+    background-color: var(--secondary-accent);
+    border: 2px solid var(--secondary-accent);
+
+    margin: 0 5px 0 0;
+}
+
+.vertical-bar-container-2 {
+    width: 8px;
+    height: 18px;
+    background-color: none;
+    border: 2px solid var(--primary-text);
+    margin: 0 5px 0 0;
+}
+
+.vertical-bar-container-3 {
+    width: 8px;
+    height: 18px;
+    background-color: none;
+    border: 2px solid var(--primary-text);
+    margin: 0 5px 0 0;
+}
+
+.vertical-bar-container-4 {
+    width: 8px;
+    height: 18px;
+    background-color: none;
+    border: 2px solid var(--primary-text);
+    margin: 0 5px 0 0;
 }
 
 /* Generate Button */

@@ -19,63 +19,73 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/Modern-Password-Generator/style.css">
 
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/f2f2d7c8e6.js" crossorigin="anonymous" defer></script>
+
 </head>
 
 <body>
-    <!-- App Title -->
-    <div id="app-title-container" class="app-title-container">
-        <h1 class="app-title">Password Generator</h1>
-    </div>
-
-    <!-- Password Container -->
-    <div id="password-container" class="password-container">
-        <input class="password-input" id="password-input" type="text">
-        <button class="password-copy" id="password-copy">Copy</button>
-    </div>
-
-    <!-- Password Options -->
-    <div id="password-options" class="password-options">
-        <div id="character-lenght-container" class="character-lenght-container">
-            <div id="character-lenght-content" class="character-lenght-content">
-                <p id="character-lenght-name" class="character-lenght-name">Character Length</p>
-                <span id="character-lenght-value" class="character-lenght-value">0</span>
-            </div>
-            <input id="character-lenght-range" class="character-lenght-range" type="range">
+    <!-- Main Container -->
+    <div class='main-container'>
+        <!-- App Title -->
+        <div id="app-title-container" class="app-title-container">
+            <h1 class="app-title">Password Generator</h1>
         </div>
-        <div class="option-include-container">
-            <div class="include-uppercase-container">
-                <input id="include-uppercase-checkbox" class="include-uppercase-checkbox" type="checkbox">
-                <p class="include-uppercase-text">Include Uppercase Letters</p>
-            </div>
-            <div class="include-lowercase-container">
-                <input id="include-lowercase-checkbox" class="include-lowercase-checkbox" type="checkbox">
-                <p class="include-lowercase-text">Include Lowercase Letters</p>
-            </div>
-            <div class="include-numbers-container">
-                <input id="include-numbers-checkbox" class="include-numbers-checkbox" type="checkbox">
-                <p class="include-numbers-text">Include Numbers</p>
-            </div>
-            <div class="include-symbols-container">
-                <input id="include-symbols-checkbox" class="include-symbols-checkbox" type="checkbox">
-                <p class="include-symbols-text">Include Symbols</p>
-            </div>
-        </div>
-        <div class="password-strength-container">
-            <div class="password-strength-content">
-                <p class="password-strength-name">Strength</p>
-                <div class="strength-value">
-                    <p id="strength-value-name" class="strength-value-name">Weak</p>
-                    <div id="strenght-containers">
 
+        <!-- Password Container -->
+        <div id="password-container" class="password-container">
+            <input class="password-input" id="password-input" type="text" disabled>
+            <button class="password-copy" id="password-copy"><i class="fa-regular fa-copy"></i></button>
+        </div>
+
+        <!-- Password Options -->
+        <div id="password-options" class="password-options">
+            <div id="character-lenght-container" class="character-lenght-container">
+                <div id="character-lenght-content" class="character-lenght-content">
+                    <p id="character-lenght-name" class="character-lenght-name">Character Length</p>
+                    <span id="character-lenght-value" class="character-lenght-value">0</span>
+                </div>
+                <input id="character-lenght-range" class="character-lenght-range" type="range">
+            </div>
+            <div class="option-include-container">
+                <div class="include-uppercase-container">
+                    <input id="include-uppercase-checkbox" class="include-uppercase-checkbox" type="checkbox">
+                    <p class="include-uppercase-text">Include Uppercase Letters</p>
+                </div>
+                <div class="include-lowercase-container">
+                    <input id="include-lowercase-checkbox" class="include-lowercase-checkbox" type="checkbox">
+                    <p class="include-lowercase-text">Include Lowercase Letters</p>
+                </div>
+                <div class="include-numbers-container">
+                    <input id="include-numbers-checkbox" class="include-numbers-checkbox" type="checkbox">
+                    <p class="include-numbers-text">Include Numbers</p>
+                </div>
+                <div class="include-symbols-container">
+                    <input id="include-symbols-checkbox" class="include-symbols-checkbox" type="checkbox">
+                    <p class="include-symbols-text">Include Symbols</p>
+                </div>
+            </div>
+            <div class="password-strength-container">
+                <div class="password-strength-content">
+                    <p class="password-strength-name">Strength</p>
+                    <div class="strength-value">
+                        <p id="strength-value-name" class="strength-value-name">Weak</p>
+                        <div id="strenght-containers" class="strenght-containers">
+                            <div class="vertical-bar-container-1" id="vertical-bar-container-1"></div>
+                            <div class="vertical-bar-container-2" id="vertical-bar-container-2"></div>
+                            <div class="vertical-bar-container-3" id="vertical-bar-container-3"></div>
+                            <div class="vertical-bar-container-4" id="vertical-bar-container-4"></div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Generate Button -->
-        <div id="generate-btn-container" class="generate-btn-container">
-            <button id="generate-btn" class="generate-btn">Generate</button>
-        </div>
 
+            <!-- Generate Button -->
+            <div id="generate-btn-container" class="generate-btn-container">
+                <button id="generate-btn" class="generate-btn">Generate</button>
+            </div>
+
+        </div>
     </div>
 </body>
 
