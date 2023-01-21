@@ -22,6 +22,9 @@
     <!-- Font Awesome CDN -->
     <script src="https://kit.fontawesome.com/f2f2d7c8e6.js" crossorigin="anonymous" defer></script>
 
+    <!-- favicon change -->
+    <link rel="shortcut icon" href="/Modern-Password-Generator/images/favicon-password.svg">
+
 </head>
 
 <body>
@@ -40,12 +43,12 @@
 
         <!-- Password Options -->
         <div id="password-options" class="password-options">
-            <div id="character-lenght-container" class="character-lenght-container">
-                <div id="character-lenght-content" class="character-lenght-content">
-                    <p id="character-lenght-name" class="character-lenght-name">Character Length</p>
-                    <span id="character-lenght-value" class="character-lenght-value">0</span>
+            <div id="character-length-container" class="character-length-container">
+                <div id="character-length-content" class="character-length-content">
+                    <p id="character-length-name" class="character-length-name">Character Length</p>
+                    <span id="character-length-value" class="character-length-value">0</span>
                 </div>
-                <input id="character-lenght-range" class="character-lenght-range" type="range">
+                <input id="character-length-range" class="character-length-range" type="range" min="0" max="20">
             </div>
             <div class="option-include-container">
                 <div class="include-uppercase-container">
@@ -70,7 +73,7 @@
                     <p class="password-strength-name">Strength</p>
                     <div class="strength-value">
                         <p id="strength-value-name" class="strength-value-name">Weak</p>
-                        <div id="strenght-containers" class="strenght-containers">
+                        <div id="strength-containers" class="strength-containers">
                             <div class="vertical-bar-container-1" id="vertical-bar-container-1"></div>
                             <div class="vertical-bar-container-2" id="vertical-bar-container-2"></div>
                             <div class="vertical-bar-container-3" id="vertical-bar-container-3"></div>
@@ -84,6 +87,8 @@
             <div id="generate-btn-container" class="generate-btn-container">
                 <button id="generate-btn" class="generate-btn">Generate</button>
             </div>
+
+
 
         </div>
     </div>

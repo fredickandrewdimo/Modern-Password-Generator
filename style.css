@@ -94,29 +94,29 @@ body {
 
 /* Character Length */
 
-.character-lenght-content {
+.character-length-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0 0 10px 0;
 }
 
-.character-lenght-name {
+.character-length-name {
     color: var(--primary-text);
     font-size: 1.4rem;
 }
 
-.character-lenght-value {
+.character-length-value {
     color: var(--primary-accent);
     font-size: 2.4rem;
 }
 
-.character-lenght-range {
+.character-length-range {
     margin: 0 0 20px 0;
     width: 100%;
 }
 
-.character-lenght-range::-webkit-slider-thumb {
+.character-length-range::-webkit-slider-thumb {
     /* height: 100px;
     width: 100px; */
     top: -5.5px;
@@ -124,16 +124,20 @@ body {
     /* background-color: red !important; */
 }
 
-.character-lenght-range::-webkit-slider-thumb:hover {
+.character-length-range::-webkit-slider-thumb:hover {
     cursor: pointer;
 }
 
-.character-lenght-range::-webkit-slider-runnable-track {
+.character-length-range::-webkit-slider-runnable-track {
     background-color: var(--primary-body);
     height: 5px;
 }
 
-.character-lenght-content input[type="range"]::-webkit-slider-thumb {
+.character-length-range::-webkit-slider-runnable-track:hover {
+    cursor: pointer;
+}
+
+.character-length-content input[type="range"]::-webkit-slider-thumb {
     background-color: #ff0000;
     /* Adjust as needed */
 }
@@ -239,7 +243,7 @@ body {
     align-items: center;
 }
 
-.strenght-containers {
+.strength-containers {
     display: flex;
     align-items: center;
 
