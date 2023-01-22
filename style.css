@@ -249,38 +249,36 @@ body {
 
 }
 
-.vertical-bar-container-1 {
-    width: 8px;
-    height: 18px;
-    /* background-color: none; */
-    /* border: 2px solid var(--primary-text); */
+.vertical-bar-yellow {
     background-color: var(--secondary-accent);
-    border: 2px solid var(--secondary-accent);
+}
 
+.vertical-bar-container-1 {
+    width: 6px;
+    height: 18px;
+    background-color: var(--secondary-text);
     margin: 0 5px 0 0;
 }
 
 .vertical-bar-container-2 {
-    width: 8px;
+    width: 6px;
     height: 18px;
-    background-color: none;
-    border: 2px solid var(--primary-text);
+    background-color: var(--secondary-text);
     margin: 0 5px 0 0;
 }
 
 .vertical-bar-container-3 {
-    width: 8px;
+    width: 6px;
     height: 18px;
-    background-color: none;
-    border: 2px solid var(--primary-text);
+    background-color: var(--secondary-text);
     margin: 0 5px 0 0;
 }
 
 .vertical-bar-container-4 {
-    width: 8px;
+    width: 6px;
     height: 18px;
-    background-color: none;
-    border: 2px solid var(--primary-text);
+    /* border: 2px solid var(--secondary-text); */
+    background-color: var(--secondary-text);
     margin: 0 5px 0 0;
 }
 

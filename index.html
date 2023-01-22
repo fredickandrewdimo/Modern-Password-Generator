@@ -25,6 +25,10 @@
     <!-- favicon change -->
     <link rel="shortcut icon" href="/Modern-Password-Generator/images/favicon-password.svg">
 
+    <!-- zxcvbn library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.2/zxcvbn.js"></script>
+
+
 </head>
 
 <body>
@@ -72,9 +76,10 @@
                 <div class="password-strength-content">
                     <p class="password-strength-name">Strength</p>
                     <div class="strength-value">
-                        <p id="strength-value-name" class="strength-value-name">Weak</p>
+                        <p id="strength-value-name" class="strength-value-name"></p>
                         <div id="strength-containers" class="strength-containers">
-                            <div class="vertical-bar-container-1" id="vertical-bar-container-1"></div>
+                            <div class="vertical-bar-container-1 vertical-bar-yellow" id="vertical-bar-container-1">
+                            </div>
                             <div class="vertical-bar-container-2" id="vertical-bar-container-2"></div>
                             <div class="vertical-bar-container-3" id="vertical-bar-container-3"></div>
                             <div class="vertical-bar-container-4" id="vertical-bar-container-4"></div>
