@@ -1,3 +1,4 @@
+/* Variable for Colors */
 :root {
     --primary-text: #E6E5EA;
     --secondary-text: #7F7D8D;
@@ -8,6 +9,7 @@
     --tertiary-body: #18171E;
 }
 
+/* Reset for the CSS */
 * {
     margin: 0;
     padding: 0;
@@ -16,16 +18,19 @@
     font: inherit;
 }
 
+/* For Rem unit */
 html {
     font-size: 62.5%;
     /* 1rem = 10px */
 }
 
+/* For the Font */
 body {
     font-family: 'Trispace', sans-serif;
 
 }
 
+/* Main Container */
 .main-container {
     display: flex;
     justify-content: center;
@@ -52,9 +57,10 @@ body {
     justify-content: space-between;
     padding: 15px 20px;
     margin: 0 0 20px 0;
-    width: 300px;
+    width: 350px;
     background-color: var(--secondary-body);
 }
+
 
 .password-input {
     margin: 0 10px 0 0;
@@ -89,7 +95,7 @@ body {
 .password-options {
     padding: 20px;
     background-color: var(--secondary-body);
-    width: 300px;
+    width: 350px;
 }
 
 /* Character Length */
@@ -209,7 +215,7 @@ body {
     font-size: 1.2rem;
 }
 
-/* Password Strenght Container */
+/* Password Strength Container */
 
 .password-strength-container {
     margin: 0 0 20px 0;
@@ -277,13 +283,11 @@ body {
 .vertical-bar-container-4 {
     width: 6px;
     height: 18px;
-    /* border: 2px solid var(--secondary-text); */
     background-color: var(--secondary-text);
     margin: 0 5px 0 0;
 }
 
 /* Generate Button */
-
 .generate-btn {
     width: 100%;
     padding: 15px 30px;
