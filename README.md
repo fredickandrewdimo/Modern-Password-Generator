@@ -39,4 +39,4 @@ Overall, this project has provided me with a solid foundation in the application
 
 <img align="left" alt="#" width="400px" src="/Users/andrew/Developer/Portfolio/Modern-Password-Generator/images/project-preview.png" style="padding-right:20px;"/>
 
-<img align="left" alt="#" width="400px" src="/Users/andrew/Developer/Portfolio/Modern-Password-Generator/images/project-preview.png" />
+<img align="left" alt="#" width="400px" src="/Users/andrew/Developer/Portfolio/Modern-Password-Generator/images/project-preview-active.png" />
